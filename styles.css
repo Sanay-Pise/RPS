@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Quicksand', sans-serif;
+    background: linear-gradient(135deg, #dfe9f3, #ffffff);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  p {
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 1rem 0;
+  }
+  
+  .game-container {
+    background: white;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 2rem 0;
+    flex-wrap: wrap;
+  }
+  
+  button {
+    font-size: 2.5rem;
+    border: none;
+    padding: 1rem;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+  
+  button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  #rock { background-color: #133870; }
+  #paper { background-color: #d91010; }
+  #scissors { background-color: #008b09; }
+  
+  #result {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+  }
+  
+  #computer-choice {
+    color: #666;
+    margin-bottom: 0.5rem;
+    text-align: center;
+  }
+  
+  #computer-move-emoji {
+    display: block;
+    font-size: 3rem;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    color: white;
+    margin: 0.5rem auto 1.5rem;
+    text-align: center;
+    width: fit-content;
+  }
+  
+  #scores {
+    font-size: 1.1rem;
+    text-align: center;
+    margin-top: 1rem;
+  }
+  
+  #user-score {
+    color: #133870;
+    font-weight: bold;
+  }
+  
+  #computer-score {
+    color: #d91010;
+    font-weight: bold;
+  }
+  
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 1.8rem;
+    }
+  
+    .buttons {
+      gap: 0.5rem;
+    }
+  
+    button {
+      width: 65px;
+      height: 65px;
+      font-size: 2rem;
+    }
+  
+    #computer-move-emoji {
+      font-size: 2.5rem;
+    }
+  }
+  
